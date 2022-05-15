@@ -1,14 +1,34 @@
+$main-color: #4eddff;
+
 .main {
   background-color: black;
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  p {
+    color: white;
+  }
 }
 
-.title {
-  color: rgb(162, 244, 247);
+.itemList {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 25px 40px;
+  margin: 10px;
+  &:hover {
+    cursor: pointer;
+    border-color: $main-color;
+  }
 }

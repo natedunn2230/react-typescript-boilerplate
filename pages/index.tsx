@@ -3,9 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
-let a: any = 3;
-console.log(a);
-
 const Home: NextPage = () => {
   return (
     <div>
@@ -16,8 +13,26 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>React Boilerplate</h1>
-        <Image alt="react-icon" width="400" height="250" src="/react-gif.gif" />
+        <div className={styles.logos}>
+          <Image
+            alt="react-icon"
+            width="460"
+            height="250"
+            src="/react-gif.gif"
+          />
+        </div>
+        <p>Click to learn more about the technologies in this boilerplate:</p>
+        <div className={styles.itemList}>
+          <a className={styles.item} href="https://www.reactjs.org">
+            React
+          </a>
+          <a className={styles.item} href="https://nextjs.org/">
+            NextJS
+          </a>
+          <a className={styles.item} href="https://www.typescriptlang.org/">
+            Typescript
+          </a>
+        </div>
       </main>
     </div>
   );
