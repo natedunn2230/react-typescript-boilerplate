@@ -13,8 +13,13 @@ Nathan Dunn
 
 ## Getting Started
 
-Running in development: `npm run dev`
+1. Install dependencies: `npm install`
 
-Building and running in production: `npm run build | npm start`
+2. Setup Husky pre-commit hook: `npm run husky`
 
-Run Linter: `npm run lint`
+3. Running in development: `npm run dev`
+4. Additional scripts:
+
+   - Build and Production: `npm run build | npm start`
+
+   - Linter: `npm run lint`
